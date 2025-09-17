@@ -56,7 +56,7 @@ module ViewComponents =
             prop.children [
                 Html.input [
                     prop.className
-                        "shadow appearance-none border rounded w-full py-2 px-3 outline-none focus:ring-2 ring-teal-300 text-grey-darker text-sm sm:text-base"
+                        "shadow-sm appearance-none border rounded-sm w-full py-2 px-3 outline-hidden focus:ring-2 ring-teal-300 text-grey-darker text-sm sm:text-base"
                     prop.value model.Input
                     prop.placeholder "What needs to be done?"
                     prop.autoFocus true
@@ -67,7 +67,7 @@ module ViewComponents =
                 ]
                 Html.button [
                     prop.className
-                        "flex-no-shrink p-2 px-12 rounded bg-teal-600 outline-none focus:ring-2 ring-teal-300 font-bold text-white hover:bg-teal disabled:opacity-30 disabled:cursor-not-allowed text-sm sm:text-base"
+                        "flex-no-shrink p-2 px-12 rounded-sm bg-teal-600 outline-hidden focus:ring-2 ring-teal-300 font-bold text-white hover:bg-teal disabled:opacity-30 disabled:cursor-not-allowed text-sm sm:text-base"
                     prop.disabled (Todo.isValid model.Input |> not)
                     prop.onClick (fun _ -> dispatch (SaveTodo(Start model.Input)))
                     prop.text "Add"
@@ -112,7 +112,7 @@ let view model dispatch =
             // Background div with image and glass effect
             Html.div [
                 prop.className "absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat
-                bg-white/20 backdrop-blur-sm"
+                bg-white/20 backdrop-blur-xs"
                 prop.style [
                     style.backgroundImageUrl "https://unsplash.it/1200/900?random"
                 ]
