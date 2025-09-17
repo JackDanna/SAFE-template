@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    mode: "jit",
     content: [
         "./index.html",
         "./**/*.{fs,js,ts,jsx,tsx}",
+        "./output/**/*.js", // Scan Fable compiled output
         "!./node_modules/**/*",
     ],
     theme: {

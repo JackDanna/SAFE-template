@@ -1,8 +1,5 @@
-/* @import 'tailwindcss'; */
-@import 'tailwindcss' source(none); /*Since tailwind by default doesn't look in git ignored files, we have to disable this default behavior*/
-@source "./output/*.fs.js"; /*We then force tailwindcss to look at the output of our fable transpolation in order to get our styling to show up*/
-
-@plugin "daisyui";
+@import 'tailwindcss';
+@plugin 'daisyui';
 
 /* This show you how to set default themes */
 /* @plugin "daisyui" {
@@ -13,8 +10,6 @@
 /* @plugin "daisyui" {
   themes: all;
 } */
-
-@config './tailwind.config.js';
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
