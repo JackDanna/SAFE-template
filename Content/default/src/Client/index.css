@@ -1,6 +1,6 @@
 /* @import 'tailwindcss'; */
 @import 'tailwindcss' source(none); /*Since tailwind by default doesn't look in git ignored files, we have to disable this default behavior*/
-@source "./output/*.fs.js"; We then force tailwindcss to look at the output of our fable transpolation in order to get our styling to show up
+@source "./output/*.fs.js"; /*We then force tailwindcss to look at the output of our fable transpolation in order to get our styling to show up*/
 
 @plugin "daisyui";
 
