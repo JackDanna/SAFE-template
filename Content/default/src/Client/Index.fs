@@ -48,6 +48,7 @@ let update msg model =
             Cmd.none
 
 open Feliz
+open Feliz.DaisyUI
 
 module ViewComponents =
     let todoAction model dispatch =
@@ -65,7 +66,7 @@ module ViewComponents =
                         if ev.key = "Enter" then
                             dispatch (SaveTodo(Start model.Input)))
                 ]
-                Html.button [
+                Daisy.button.button [
                     prop.className
                         "flex-no-shrink p-2 px-12 rounded-sm bg-teal-600 outline-hidden focus:ring-2 ring-teal-300 font-bold text-white hover:bg-teal disabled:opacity-30 disabled:cursor-not-allowed text-sm sm:text-base"
                     prop.disabled (Todo.isValid model.Input |> not)
