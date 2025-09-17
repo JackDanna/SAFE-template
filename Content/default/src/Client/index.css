@@ -4,11 +4,12 @@
 
 @plugin "daisyui";
 
+/* This show you how to set default themes */
 /* @plugin "daisyui" {
   themes: light --default, dark --prefersdark, cupcake;
 } */
 
-
+/* This shows you how to add all themes */
 /* @plugin "daisyui" {
   themes: all;
 } */
