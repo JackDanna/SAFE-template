@@ -117,22 +117,7 @@ let view model dispatch =
                 prop.style [
                     style.backgroundImageUrl "https://unsplash.it/1200/900?random"
                 ]
-            ]
-
-            // Content container (the rest of your UI)
-            Html.div [
-                prop.className "relative z-10 h-full w-full"
                 prop.children [
-                    // Your existing content here
-                    Html.a [
-                        prop.href "https://safe-stack.github.io/"
-                        prop.className "absolute block ml-4 sm:ml-12 h-10 w-10 sm:h-12 sm:w-12 bg-teal-300 hover:cursor-pointer hover:bg-teal-400"
-                        prop.children [
-                            Html.img [ prop.src "/favicon.png"; prop.alt "Logo" ]
-                        ]
-                    ]
-
-
                     Html.div [
                         prop.className "flex flex-col items-center justify-center h-full"
                         prop.children [
@@ -146,6 +131,22 @@ let view model dispatch =
                                     ViewComponents.todoList model dispatch
                                 ]
                             ]
+                        ]
+                    ]
+                ]
+
+            ]
+
+            // Content container (the rest of your UI)
+            Html.div [
+                prop.className "relative z-10 h-full w-full"
+                prop.children [
+                    // Your existing content here
+                    Html.a [
+                        prop.href "https://safe-stack.github.io/"
+                        prop.className "absolute block ml-4 sm:ml-12 h-10 w-10 sm:h-12 sm:w-12 bg-teal-300 hover:cursor-pointer hover:bg-teal-400"
+                        prop.children [
+                            Html.img [ prop.src "/favicon.png"; prop.alt "Logo" ]
                         ]
                     ]
                 ]
