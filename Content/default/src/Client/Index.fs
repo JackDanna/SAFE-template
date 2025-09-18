@@ -119,7 +119,7 @@ let view model dispatch =
                 ]
                 prop.children [
                     Daisy.heroContent [
-                        Html.div [
+                        Daisy.card [
                             prop.className "bg-white/20 backdrop-blur-lg p-4 sm:p-8 rounded-xl shadow-lg border border-white/30 mx-4 sm:mx-0 max-w-full sm:max-w-2xl"
                             prop.children [
                                 Html.h1 [
