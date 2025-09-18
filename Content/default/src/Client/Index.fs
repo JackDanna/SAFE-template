@@ -145,7 +145,6 @@ let view model dispatch =
                                         prop.text "SAFE.App"
                                     ]
                                     ViewComponents.todoList model dispatch
-                                    ViewComponents.daisyUITestSection
                                 ]
                             ]
                         ]
