@@ -118,7 +118,7 @@ let view model dispatch =
                     style.backgroundImageUrl "https://unsplash.it/1200/900?random"
                 ]
                 prop.children [
-                    Html.div [
+                    Daisy.heroContent [
                         prop.className "flex flex-col items-center justify-center h-full"
                         prop.children [
                             Html.div [
