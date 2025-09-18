@@ -102,7 +102,7 @@ module ViewComponents =
         ]
 
 let view model dispatch =
-    Html.section [
+    Html.div [
         prop.className "h-screen w-screen relative overflow-hidden"
         prop.children [
             // Meta viewport tag for proper mobile scaling
