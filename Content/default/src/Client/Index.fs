@@ -79,9 +79,9 @@ module ViewComponents =
 
     let todoList model dispatch =
         Html.div [
-            prop.className "rounded-md p-2 sm:p-4 w-full"
+            prop.className "p-2 sm:p-4 w-full"
             prop.children [
-                Html.ol [
+                Daisy.list [
                     prop.className "list-decimal ml-4 sm:ml-6"
                     prop.children [
                         match model.Todos with
