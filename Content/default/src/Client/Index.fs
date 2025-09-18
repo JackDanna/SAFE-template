@@ -119,25 +119,20 @@ let view model dispatch =
                 ]
                 prop.children [
                     Daisy.heroContent [
-                        prop.className "flex flex-col items-center justify-center h-full"
-                        prop.children [
-                            Html.div [
-                                prop.className "bg-white/20 backdrop-blur-lg p-4 sm:p-8 rounded-xl shadow-lg border border-white/30 mx-4 sm:mx-0 max-w-full sm:max-w-2xl"
-                                prop.children [
-                                    Html.h1 [
-                                        prop.className "text-center text-3xl sm:text-5xl font-bold mb-3 p-2 sm:p-4"
-                                        prop.text "SAFE.App"
-                                    ]
-                                    ViewComponents.todoList model dispatch
+                        Html.div [
+                            prop.className "bg-white/20 backdrop-blur-lg p-4 sm:p-8 rounded-xl shadow-lg border border-white/30 mx-4 sm:mx-0 max-w-full sm:max-w-2xl"
+                            prop.children [
+                                Html.h1 [
+                                    prop.className "text-center text-3xl sm:text-5xl font-bold mb-3 p-2 sm:p-4"
+                                    prop.text "SAFE.App"
                                 ]
+                                ViewComponents.todoList model dispatch
                             ]
                         ]
                     ]
                 ]
-
             ]
 
-            // Content container (the rest of your UI)
             Html.div [
                 prop.className "relative z-10 h-full w-full"
                 prop.children [
