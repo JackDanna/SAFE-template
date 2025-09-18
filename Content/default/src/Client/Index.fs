@@ -133,18 +133,12 @@ let view model dispatch =
                 ]
             ]
 
-            // Top-left logo link
-            Html.div [
-                prop.className "relative z-10 h-full w-full"
+            // Top-left logo link - positioned absolutely without blocking overlay
+            Html.a [
+                prop.href "https://safe-stack.github.io/"
+                prop.className "absolute top-4 left-4 sm:top-6 sm:left-12 z-20 block h-10 w-10 sm:h-12 sm:w-12 bg-teal-300 hover:cursor-pointer hover:bg-teal-400"
                 prop.children [
-                    // Your existing content here
-                    Html.a [
-                        prop.href "https://safe-stack.github.io/"
-                        prop.className "absolute block ml-4 sm:ml-12 h-10 w-10 sm:h-12 sm:w-12 bg-teal-300 hover:cursor-pointer hover:bg-teal-400"
-                        prop.children [
-                            Html.img [ prop.src "/favicon.png"; prop.alt "Logo" ]
-                        ]
-                    ]
+                    Html.img [ prop.src "/favicon.png"; prop.alt "Logo" ]
                 ]
             ]
         ]
