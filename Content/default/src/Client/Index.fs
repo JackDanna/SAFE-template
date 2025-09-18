@@ -111,7 +111,7 @@ let view model dispatch =
                 prop.content "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
             ]
             
-            // Background div with image and glass effect
+            // Background image and content card
             Daisy.hero [
                 prop.className "absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeatbg-white/20 backdrop-blur-xs"
                 prop.style [
@@ -133,6 +133,7 @@ let view model dispatch =
                 ]
             ]
 
+            // Top-left logo link
             Html.div [
                 prop.className "relative z-10 h-full w-full"
                 prop.children [
