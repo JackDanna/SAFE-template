@@ -112,9 +112,8 @@ let view model dispatch =
             ]
             
             // Background div with image and glass effect
-            Html.div [
-                prop.className "absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeat
-                bg-white/20 backdrop-blur-xs"
+            Daisy.hero [
+                prop.className "absolute inset-0 bg-cover bg-center bg-fixed bg-no-repeatbg-white/20 backdrop-blur-xs"
                 prop.style [
                     style.backgroundImageUrl "https://unsplash.it/1200/900?random"
                 ]
